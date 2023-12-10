@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --red: #F26419;
+    --orange: #F6AE2D;
+    --dark-blue: #33658A;
+    --light-blue: #86BBD8;
+    --dark: #2F4858;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* align container */
+.container__center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.align__left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+h1{
+    font-weight: 500;
+    font-size: 90px;
+    letter-spacing: 2px;
+    color: var(--dark);
+}
+
+p{
+    font-size: 25px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    margin: 2rem 0;
+    color: var(--dark);
+}
+
+a{text-decoration: none;}
+
+ul li{list-style: none;}
+
+/* Missions Page =============*/
+#landing__area{
+    width: 100%;
+    height: 100vh;
+    background: url(img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#landing__area nav{
+    height: 10%;
+    width: 80%;
+}
+
+nav .logo{
+    color: var(--orange);
+}
+
+nav a{
+    color: var(--light-blue);
+    margin: 0 20px;
+}
+nav a:hover{color: var(--orange);}
+
+.landing__content {
+    height: 90%;
+    width: 80%;
+}
+
+.landing__content .landing__info{
+    width: 60%;
+    height: 100%;
+}
+
+.landing__info h1{color: var(--light-blue);}
+.landing__info p{
+    color: var(--light-blue);
+    width: 60%;
+}
+
+.landing__info button{
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.landing__info button:active{
+    transform: translateY(2px);
+} 
+
+.landing__info a{
+    color: var(--dark-blue);
+    background-color: var(--orange);
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.image__pet{
+    width: 40%;
+    height: 100%;
+    background: url(img/mission.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
